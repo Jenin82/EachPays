@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import NotFound from "./components/NotFound/NotFound";
 import { Dashboard } from "./modules/Dashboard/Dashboard";
 import CreateGroup from "./modules/CreateGroup/CreateGroup";
+import ExpenseGroup from "./modules/ExpenseGroup/ExpenseGroup";
 
 function App() {
     const router = createBrowserRouter([
@@ -25,7 +26,7 @@ function App() {
 		},
         {
 			path: "/group/:id",
-			element: <CreateGroup />, 
+			element: <ExpenseGroup />, 
 		}
     ]);
     return (

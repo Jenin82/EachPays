@@ -49,7 +49,7 @@ const CreateGroup = () => {
 
     const handleSaveMembersToGroup = () => {
         // Create new member objects from the userNames
-        const newMembers = userNames.map((name) => ({ name, paid: 0 }));
+        const newMembers = userNames.map((name) => ({ name, paid: 0, id: uuidv4() }));
 		setGroup({
 			...group,
 			id: uuidv4(),

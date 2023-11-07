@@ -1,6 +1,7 @@
 export interface Member {
     name: string;
     paid: number;
+	id: string;
 }
 
 export interface Group {
@@ -15,7 +16,7 @@ export interface Data {
     data: Group[];
 }
 
-export interface Action {
-	isCreate: boolean;
-	isGroup: boolean;
+export interface OptionType {
+	value: string;
+	label: string;
 }
