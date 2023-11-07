@@ -1,14 +1,37 @@
-import viteLogo from "../public/logo.png";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
+import { Toaster } from "react-hot-toast";
+import NotFound from "./components/NotFound/NotFound";
+import { Dashboard } from "./modules/Dashboard/Dashboard";
+import CreateGroup from "./modules/CreateGroup/CreateGroup";
 
 function App() {
+    const router = createBrowserRouter([
+        {
+            path: "*",
+            element: <NotFound />,
+        },
+        {
+            path: "/404",
+            element: <NotFound />,
+        },
+        {
+			path: "/",
+			element: <Dashboard />, 
+		},
+        {
+			path: "/create",
+			element: <CreateGroup />, 
+		},
+        {
+			path: "/group/:id",
+			element: <CreateGroup />, 
+		}
+    ]);
     return (
         <>
-            <div>
-                <a href="https://vitejs.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-            </div>
+            <Toaster position="bottom-center" reverseOrder={false} />
+            <RouterProvider router={router} />
         </>
     );
 }
