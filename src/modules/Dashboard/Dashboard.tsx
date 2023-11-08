@@ -39,12 +39,14 @@ export const Dashboard = () => {
             </div>
             <div className={styles.groups}>
                 {data.data.map((group) => (
-                    <div key={group.id} className={styles.group}>
-                        <h2 onClick={() => navigate(`/group/${group.id}`)}>
-                            {group.name}
-                        </h2>
+                    <div
+                        key={group.id}
+                        className={styles.group}
+                        onClick={() => navigate(`/group/${group.id}`)}
+                    >
+                        <h2>{group.name}</h2>
                         <div>
-							<span>Total: {group.total}</span>
+                            <span>Total: {group.total}</span>
                             <span>Members: {group.membersCount}</span>
                         </div>
                     </div>
