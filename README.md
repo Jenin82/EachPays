@@ -1,4 +1,3 @@
-```markdown
 # EachPays - Group Expense Calculator
 
 EachPays is a Progressive Web Application (PWA) designed to simplify the way groups manage and split expenses. Built with React, Vite, and TypeScript, it offers a robust and responsive user experience, optimized for mobile devices.
@@ -83,5 +82,3 @@ Project Hosted Link: [each-pays.vercel.app](https://each-pays.vercel.app/)
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-
-```
