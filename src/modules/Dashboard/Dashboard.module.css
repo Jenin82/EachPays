@@ -1,0 +1,114 @@
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.header{
+	height: 7em;
+	background-color: var(--secondary);
+	width: 100%;
+	padding-left: 2rem;
+	display: flex;
+	align-items: end;
+}
+
+.logo{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 10em;
+    padding: 2.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.logo img{
+	width: 80%;
+}
+
+@media (min-width: 768px) {
+	.logo img{
+		width: 35%;
+	}
+	
+}
+@media (min-width: 980px) {
+	.logo img{
+		width: 20%;
+	}
+	
+}
+
+.heading{
+	width: 100%;
+	text-align: center;
+}
+
+.heading h3{
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+.button{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button button{
+	background-color: rgb(21, 82, 234);
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: 0.5rem;
+	width: 70%;
+	border-radius: 8px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.groups{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+	gap: 5px;
+	flex-direction: column;
+	width: 100%;
+}
+
+.group{
+	border-radius: 10px;
+	display: flex;
+	width: 85%;
+	align-items: center;
+	padding: 0 15px;
+	border: 2px solid var(--secondary);
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.group div{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.group div span{
+	width: 100%;
+	text-align: end;
+}
