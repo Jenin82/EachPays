@@ -26,7 +26,7 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your system to use `
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/yourusername/EachPays.git
+git clone https://github.com/Jenin82/EachPays.git
 cd EachPays
 ```
 
