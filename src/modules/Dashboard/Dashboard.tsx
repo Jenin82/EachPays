@@ -39,7 +39,7 @@ export const Dashboard = () => {
             </div>
             <div className={styles.groups}>
                 {data.data.map((group) => (
-                    <div
+                    group.name !== "" && <div
                         key={group.id}
                         className={styles.group}
                         onClick={() => navigate(`/group/${group.id}`)}

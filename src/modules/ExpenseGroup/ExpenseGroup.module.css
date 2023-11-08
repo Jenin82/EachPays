@@ -1,0 +1,144 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.header {
+    height: 7em;
+    background-color: var(--secondary);
+    width: 100%;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: rgb(2, 179, 138);
+    color: white;
+    padding: 0.8em;
+    border-radius: 8px;
+    border: none;
+}
+
+.members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 80%;
+}
+
+.member {
+    border: 2px solid var(--secondary);
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+}
+
+.green {
+    color: rgb(75, 255, 47);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Modal Styles */
+.modal {
+    display: block; /* Hidden by default, but if isModalOpen is true then it shows */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    display: flex; /* Use flexbox to center the child */
+    align-items: center; /* Center vertically */
+    justify-content: center;
+}
+
+.modalContent {
+    background-color: var(--primary);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid var(--secondary);
+    width: 50%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    z-index: 1001;
+    border-radius: 8px;
+}
+
+.modalContent h2 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 15%;
+        opacity: 1;
+    }
+}
+
+/* If you have more specific styling needs, you might want to add class names to your inputs and buttons and style them here */
+.modalContent input[type="number"] {
+    margin: 10px 0;
+    padding: 10px;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 600;
+    border: 1px solid var(--secondary);
+    width: calc(
+        100% - 22px
+    ); /* Adjusts the width to make room for padding and border */
+    border-radius: 8px;
+}
+
+.modalContent button {
+    background-color: rgb(2, 179, 138); /* Green background */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	border-radius: 8px;
+}
+
+.modalContent button:hover {
+    opacity: 0.8;
+}
