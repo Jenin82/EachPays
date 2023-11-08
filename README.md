@@ -1,27 +1,87 @@
-# React + TypeScript + Vite
+```markdown
+# EachPays - Group Expense Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EachPays is a Progressive Web Application (PWA) designed to simplify the way groups manage and split expenses. Built with React, Vite, and TypeScript, it offers a robust and responsive user experience, optimized for mobile devices.
 
-Currently, two official plugins are available:
+Our intuitive interface ensures that whether you're planning a group trip, sharing a meal, or managing household expenses, EachPays makes it easy to keep track of who owes what.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Mobile-First Design**: Optimized for use on-the-go with a mobile-first approach.
+- **PWA Capabilities**: Installable on mobile devices with offline functionality for maximum convenience.
+- **User-Friendly Interface**: A clean, responsive interface that adjusts seamlessly across devices.
+- **Real-Time Calculations**: Instantly calculate individual shares of group expenses.
+- **Expense History**: Keep track of all group expenses in one place.
+- **Secure**: Uses localStorage to store data, so your group's expense data is safe.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+To get a local copy up and running, follow these simple steps.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+### Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your system to use `npm`, which is necessary to install dependencies and run the project.
+
+### Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/yourusername/EachPays.git
+cd EachPays
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install project dependencies:
+
+```sh
+npm install
+```
+
+3. Start the development server:
+
+```sh
+npm run dev
+```
+
+This will start the application in development mode with hot-reloading enabled.
+
+4. Open your browser and navigate to:
+
+```
+http://localhost:5173/
+```
+
+Now you can use the application from your local machine.
+
+## Deployment
+
+To build the application for production, run the following command:
+
+```sh
+npm run build
+```
+
+This will generate a `dist` folder that you can serve using your preferred hosting solution.
+
+## Contributing
+
+We welcome contributions to EachPays. If you have suggestions on how to improve the app, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+Don't forget to give the project a star! Thanks again!
+
+## Contact
+
+Jenin Joseph - [@__Jenin__](https://twitter.com/__Jenin__)
+
+Project Link: [EachPays](https://github.com/Jenin82/EachPays)
+
+Project Hosted Link: [each-pays.vercel.app](https://each-pays.vercel.app/)
+
+
+## Acknowledgements
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+```
